@@ -1,0 +1,10 @@
+<div class="background-image">
+  <div class="services-grid">
+    <div *ngFor="let service of services" class="service-item">
+      <h2 [id]="service.id">
+        <i class="fas" [ngClass]="service.icon"></i> {{ service.title }}
+      </h2>
+      <p>{{ service.description }}</p>
+    </div>
+  </div>
+</div>

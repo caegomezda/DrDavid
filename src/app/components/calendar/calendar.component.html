@@ -1,0 +1,28 @@
+<div class="calendar">
+    <div class="calendar-header">
+      <button (click)="prevMonth()">&lt;</button>
+      <h2>{{ months[currentMonth] }} {{ currentYear }}</h2>
+      <button (click)="nextMonth()">&gt;</button>
+    </div>
+    <table class="calendar-table">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let week of calendarDays">
+          <td *ngFor="let day of week" [class.current-date]="day === today.getDate() && currentMonth === today.getMonth() && currentYear === today.getFullYear()">
+            {{ day }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

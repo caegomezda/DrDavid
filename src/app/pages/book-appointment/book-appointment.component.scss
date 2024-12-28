@@ -1,0 +1,273 @@
+.site-header {
+  position: sticky; /* Cambia a sticky para que el header quede fijo al hacer scroll */
+  top: 0; /* Fija la posición al borde superior */
+  left: 0;
+  right: 0;
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
+  padding: 40px 40px; /* Incrementa el tamaño del header */
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mejorar contraste */
+  z-index: 1;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between; /* Distribución equilibrada */
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.site-title {
+  font-size: 2rem; /* Título más grande */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.site-title:hover {
+  color: #00bfa5; /* Cambia de color al pasar el mouse */
+}
+
+.header-links {
+  display: flex;
+  gap: 20px; /* Espaciado uniforme entre enlaces */
+}
+
+.header-links a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-links a:hover {
+  color: #00bfa5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* Espaciado uniforme entre íconos */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.8rem; /* Tamaño más grande para los íconos */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transición para hover */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Efecto de zoom */
+  color: #00bfa5;
+}
+
+.social-icons i {
+  display: inline-block; /* Asegura que los íconos sean visibles */
+}
+
+/* Menu Toggle (Hamburger Icon) */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 11; /* Above menu */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header-wrapper {
+    flex-direction: column;
+    text-align: center; /* Centra el contenido en pantallas pequeñas */
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .header-links {
+    flex-direction: column;
+    gap: 10px; /* Espaciado reducido */
+  }
+
+  .social-icons {
+    justify-content: center; /* Centra los íconos sociales */
+    margin-top: 15px;
+  }
+  .menu-toggle {
+    display: block; /* Show toggle button */
+  }
+
+  .header-links {
+    display: none; /* Hide links by default */
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.2rem; /* Reduce el tamaño del título en pantallas muy pequeñas */
+  }
+
+  .header-links a {
+    font-size: 0.9rem; /* Reduce el tamaño de los enlaces */
+  }
+
+  .social-icons a {
+    font-size: 1.2rem; /* Reduce el tamaño de los íconos sociales */
+  }
+}
+
+.header-banner {
+  background: linear-gradient(90deg, #f4f4f4, #eaeaea);
+  padding: 15px 15px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.contact-info, .logo, .secondary-contact {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px 35px;
+  text-align: center;
+}
+
+.contact-info a, .secondary-contact a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.contact-info a:hover, .secondary-contact a:hover {
+  text-decoration: underline;
+}
+
+.doctor-name {
+  font-size: 2.5rem;
+  color: #0e3858;
+  font-weight: bold;
+}
+
+.specialty {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.main-content {
+  background: #fff;
+  padding: 20px 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #0e3858;
+  margin-bottom: 10px;
+}
+
+.intro .quote {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.intro .signature {
+  // font-weight: bold;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.center-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.center-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.image img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+.container-title{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .contact-info, .logo, .secondary-contact {
+    margin-bottom: 20px;
+  }
+
+  .intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .center-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctor-name {
+    font-size: 2rem;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .center-button {
+    font-size: 0.8rem;
+  }
+}

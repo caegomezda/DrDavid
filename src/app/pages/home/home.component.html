@@ -1,0 +1,91 @@
+<div class="home">
+  <!-- Title Section -->
+  <div class="content-section">
+    <!-- Image Section -->
+    <div class="image-container">
+      <img src="../../../assets/images/david.jpg" 
+          alt="Internal medicine care in Medellín"
+          width="298" 
+          height="510">
+    </div>
+    <!-- Text Section -->
+    <div class="text-container">
+      <h1>We excel at internal medicine for English speakers</h1>
+      <p>Schedule an appointment with Dr. Castaño and see for yourself.</p>
+      <p>
+        I have 13 years of experience, including 8 years in internal medicine. I have worked in hospital settings, emergency departments, and ambulatory care. My holistic approach ensures personalized, compassionate care tailored to each patient's needs. I am committed to long-term health and wellness through patient education and comprehensive care.
+      </p>
+    </div>
+  </div>
+  
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-panel">
+      <div *ngFor="let service of services" class="service-item" [style.background-color]="service.backgroundColor">
+        <!-- Mostrar ícono de fuente si existe -->
+        <i *ngIf="service.icon" class="{{ service.icon }}"></i>
+        <!-- Mostrar imagen personalizada si existe -->
+        <img *ngIf="service.image" [src]="service.image" [alt]="service.title + ' icon'" class="custom-icon" />
+        <a style="display: none;" href="https://www.flaticon.es/iconos-gratis/pulmon" title="pulmón iconos">Pulmón iconos creados por Freepik - Flaticon</a>
+        <a style="display: none;" href="https://www.flaticon.com/free-icons/kidney" title="kidney icons">Kidney icons created by iconmas - Flaticon</a>
+        <a style="display: none;" href="https://www.flaticon.com/free-icons/sugar-blood-level" title="sugar blood level icons">Sugar blood level icons created by Flowicon - Flaticon</a>
+        <a style="display: none;" href="https://www.flaticon.com/free-icons/colon" title="colon icons">Colon icons created by surang - Flaticon</a>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+        <a [href]="'/services#' + service.id">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section>
+    <div class="video-section">
+      <h2>Learn more about our approach</h2>
+      <div class="video-container">
+        <!-- YouTube Embed -->
+        <iframe 
+          width="728" 
+          height="410" 
+          src="https://www.youtube.com/embed/FCj09Tm6vRM" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <app-skills></app-skills>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Two-Column Section -->
+  <section>
+    <div class="two-column-section">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="description">Request Description:</label>
+          <textarea id="description" placeholder="Describe your query or request" rows="5" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="info-column">
+        <h2>Why Choose Us?</h2>
+        <p>Dr. Castaño offers a unique combination of experience, compassion, and personalized care. With over 13 years of experience, he is dedicated to providing a holistic approach to your well-being.</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Expertise in internal medicine.</li>
+          <li><i class="fas fa-check-circle"></i> Bilingual care (English and Spanish).</li>
+          <li><i class="fas fa-check-circle"></i> Personalized medical evaluations.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+    <app-testimonials></app-testimonials>
+
+
+</div>
+  

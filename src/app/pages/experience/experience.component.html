@@ -1,0 +1,36 @@
+<div class="background-image">
+  <div class="section">
+    <h2>Typical Patient Profile</h2>
+    <ul>
+      <li><strong>Description:</strong> {{ experience.typicalPatient.description }}</li>
+      <li><strong>Demographics:</strong> {{ experience.typicalPatient.demographics }}</li>
+      <li><strong>Languages:</strong> {{ experience.typicalPatient.languages }}</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Medical Conditions</h2>
+    <ul>
+      <li><strong>Common Conditions:</strong> {{ experience.medicalConditions.common }}</li>
+      <li><strong>Specialized Services:</strong> {{ experience.medicalConditions.specialized }}</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Geographic Analysis</h2>
+    <ul>
+      <li><strong>Countries of Origin:</strong> {{ experience.geographicAnalysis.countries }}</li>
+      <li><strong>Reasons for Medellín:</strong> {{ experience.geographicAnalysis.reasons }}</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Patient Expectations</h2>
+    <ul>
+      <li><strong>Expectations:</strong> {{ experience.patientExpectations.expectations }}</li>
+      <li><strong>Preferred Communication:</strong> {{ experience.patientExpectations.communication }}</li>
+      <li><strong>Valued Information:</strong> {{ experience.patientExpectations.information }}</li>
+    </ul>
+  </div>
+  <app-testimonials></app-testimonials>
+</div>

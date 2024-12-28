@@ -1,0 +1,48 @@
+.background-image {
+  padding: 20px 150px;
+  line-height: 1.5;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta las columnas automáticamente */
+  gap: 20px; /* Espaciado entre columnas */
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background: #f9f9f9; /* Fondo suave */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 i {
+  color: #007bff; /* Azul profesional */
+}
+
+p {
+  font-size: 1.2rem; /* Tamaño ligeramente más grande */
+  margin-bottom: 15px;
+  color: #333;
+  text-align: left; /* Alineación a la izquierda */
+  max-width: 700px; /* Reduce el ancho del texto */
+  line-height: 1.8; /* Mejor separación entre líneas */
+}
+
+.custom-icon {
+  width: 29.05px;
+  height: 29.6px;
+  margin-bottom: 10px;
+}
