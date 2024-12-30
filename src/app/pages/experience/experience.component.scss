@@ -51,6 +51,15 @@
   }
 }
 
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
+  padding: 20px; /* Espaciado opcional */
+  background-color: #f4f4f4; /* Fondo opcional para resaltar */
+}
+
 @media (max-width: 768px) {
   .background-image {
     padding: 20px;
