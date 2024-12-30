@@ -10,65 +10,61 @@ export class HomeComponent {
   services = [
     {
       id: 'hypertension',
-      backgroundColor: '#d9f2e6', // Verde menta para transmitir calma y salud
+      backgroundColor: '#9df2c7', // Verde menta más vibrante
       icon: 'fas fa-heartbeat',
       title: 'Hypertension',
       description: 'Hypertension control and management.',
     },
     {
       id: 'copd',
-      backgroundColor: '#ffe4e1', // Rosa claro que transmite suavidad y cuidado
-      // icon: 'fas fa-wind',
+      backgroundColor: '#ffb3b0', // Rosa más vibrante para cuidado respiratorio
       image: 'assets/images/silueta-de-pulmones.png', // Ruta del ícono personalizado
-
       title: 'COPD (Chronic Obstructive Pulmonary Disease)',
       description: 'Treatment and management of COPD.',
     },
     {
       id: 'diabetes',
-      backgroundColor: '#fff3cd', // Amarillo claro que transmite optimismo y energía
-      // icon: 'fas fa-prescription-bottle',
+      backgroundColor: '#ffe066', // Amarillo vibrante para energía y optimismo
       image: 'assets/images/diabetes-test.png', // Ruta del ícono personalizado
       title: 'Diabetes Mellitus',
       description: 'Type 2 Diabetes treatment and management.',
     },
     {
       id: 'ckd',
-      backgroundColor: '#e0f7fa', // Azul claro relacionado con limpieza y tranquilidad
-      // icon: 'fas fa-flask',
+      backgroundColor: '#81e5f7', // Azul más brillante para tranquilidad y limpieza
       image: 'assets/images/kidney.png', // Ruta del ícono personalizado
       title: 'Chronic Kidney Disease (CKD)',
       description: 'Control and follow-up for Chronic Kidney Disease.',
     },
     {
       id: 'migraine',
-      backgroundColor: '#ffebcd', // Beige claro que transmite suavidad y calma
+      backgroundColor: '#ffcc99', // Beige más vibrante para calma
       icon: 'fas fa-head-side-virus',
       title: 'Migraine',
       description: 'Migraine treatment and management.',
     },
     {
       id: 'travelers-fever',
-      backgroundColor: '#faf4e1', // Amarillo crema que inspira confianza y cercanía
+      backgroundColor: '#fff8a6', // Amarillo crema más brillante para confianza
       icon: 'fas fa-route',
       title: "Traveler's Fever",
       description: 'Evaluation and follow-up for traveler’s fever (Tropical Infectious diseases).',
     },
     {
       id: 'cardiovascular-risk',
-      backgroundColor: '#cce7ff', // Azul cielo que inspira tranquilidad y salud
+      backgroundColor: '#ff6666', // Rojo vivo para destacar la importancia
       icon: 'fas fa-heart',
       title: 'Cardiovascular Risk Assessment',
       description: 'Cardiovascular risk follow-up.',
     },
     {
       id: 'gastrointestinal-disorders',
-      backgroundColor: '#d8f3dc', // Verde claro relacionado con bienestar y frescura
-      // icon: 'fas fa-vialfas fa-notes-medical',
+      backgroundColor: '#99e5a1', // Verde brillante para bienestar y frescura
       image: 'assets/images/colon.png', // Ruta del ícono personalizado
       title: 'Gastrointestinal Disorders',
       description: 'Gastrointestinal and hepatic conditions and disorders.',
     },
+    
     
   ];
 }

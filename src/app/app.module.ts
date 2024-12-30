@@ -15,7 +15,9 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { SkillsComponent } from './components/skills/skills.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { AppointmentSchedulerComponent } from './components/appointment-scheduler/appointment-scheduler.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,14 @@ import { SkillsComponent } from './components/skills/skills.component';
     NotFoundComponent,
     TestimonialsComponent,
     SkillsComponent,
+    AppointmentSchedulerComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule, // Aquí se incluye FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

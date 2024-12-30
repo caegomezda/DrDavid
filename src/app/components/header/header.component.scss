@@ -1,15 +1,15 @@
 .site-header {
-  position: sticky; /* Cambia a sticky para que el header quede fijo al hacer scroll */
-  top: 0; /* Fija la posición al borde superior */
-  left: 0;
-  right: 0;
-  z-index: 10; /* Asegura que esté por encima de otros elementos */
-  padding: 60px 40px; /* Incrementa el tamaño del header */
+  padding: 80px 50px; /* Incrementa ligeramente el tamaño del header */
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2); /* Fondo más claro con gradiente suave */
+  color: #004d40; /* Color del texto más oscuro para mejor contraste */
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
   background-size: cover;
   background-position: center;
-  // background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .site-header::before {
@@ -19,7 +19,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mejorar contraste */
   z-index: 1;
 }
 
@@ -32,20 +31,21 @@
 }
 
 .site-title {
-  font-size: 2rem; /* Título más grande */
-  color: white;
-  text-decoration: none;
+  font-size: 2.2rem; /* Ajusta el tamaño del título */
+  // color: white; /* Conserva el color blanco para consistencia */
+  color: #222;
   font-weight: bold;
+  text-decoration: none;
   transition: color 0.3s ease;
-}
 
-.site-title:hover {
-  color: #00bfa5; /* Cambia de color al pasar el mouse */
+  &:hover {
+    color: #00796b; /* Hover en tonos relacionados */
+  }
 }
 
 .header-links {
   display: flex;
-  gap: 20px; /* Espaciado uniforme entre enlaces */
+  gap: 30px; /* Espaciado uniforme entre enlaces */
 
   &.active {
     display: flex; /* Muestra el menú al activarlo */
@@ -53,50 +53,57 @@
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+    // background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
-}
 
-.header-links a {
-  color: white;
-  font-size: 1.5rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+  a {
+    font-size: 1.6rem; /* Ajusta tamaño de enlaces */
+    // color: white;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease;
 
-.header-links a:hover {
-  color: #00bfa5;
+    &:hover {
+      color: #00796b;
+    }
+  }
 }
 
 .social-icons {
   display: flex;
   gap: 20px; /* Espaciado uniforme entre íconos */
+
+  a {
+    // color: white;
+    color: #444;
+    font-size: 1.8rem; /* Tamaño consistente con el diseño */
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      color: #00796b;
+    }
+  }
+
+  i {
+    display: inline-block; /* Asegura que los íconos sean visibles */
+  }
 }
 
-.social-icons a {
-  color: white;
-  font-size: 1.8rem; /* Tamaño más grande para los íconos */
-  transition: transform 0.3s ease, color 0.3s ease; /* Transición para hover */
-}
-
-.social-icons a:hover {
-  transform: scale(1.2); /* Efecto de zoom */
-  color: #00bfa5;
-}
-
-.social-icons i {
-  display: inline-block; /* Asegura que los íconos sean visibles */
-}
-
-/* Menu Toggle (Hamburger Icon) */
 .menu-toggle {
   display: none; /* Hidden by default */
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 11; /* Above menu */
+  // color: white;
+  color: #222;
+
+  &:hover {
+    color: #00796b;
+  }
 }
 
 @media (max-width: 768px) {
