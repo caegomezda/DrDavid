@@ -41,18 +41,21 @@
     <div class="video-section">
       <h2>{{ translations?.home.learnMoreTitle }}</h2>
       <div class="video-container">
-        <iframe 
+        <!-- Video Local -->
+        <video 
           width="1092" 
-          height="615"         
-          src="https://www.youtube.com/embed/FCj09Tm6vRM" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
+          height="615" 
+          controls 
+          autoplay 
+          muted 
+          loop>
+          <source src="assets/images/IMG_9375.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </section>
+  
 
   <!-- Two-Column Section -->
   <section>
