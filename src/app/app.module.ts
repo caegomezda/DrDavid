@@ -18,6 +18,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppointmentSchedulerComponent } from './components/appointment-scheduler/appointment-scheduler.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule, // Aquí se incluye FormsModule
+    HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]

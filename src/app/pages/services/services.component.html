@@ -7,11 +7,10 @@
     >
       <h2 [id]="service.id">
         <i *ngIf="service.icon" class="{{ service.icon }}"></i>
-        <!-- Mostrar imagen personalizada si existe -->
-        <img *ngIf="service.image" [src]="service.image" [alt]="service.title + ' icon'" class="custom-icon" /> 
+        <img *ngIf="service.image" [src]="service.image" [alt]="service.title + ' icon'" class="custom-icon" />
         {{ service.title }}
       </h2>
-      <p>{{ service.description }}</p>
+      <p>{{ service.detailedDescription }}</p>
     </div>
   </div>
 </div>

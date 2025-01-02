@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslationService } from 'src/app/services/translation.service';
 
 @Component({
   selector: 'app-testimonials',
@@ -6,41 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testimonials.component.scss'],
 })
 export class TestimonialsComponent implements OnInit {
-  testimonials = [
-    {
-      name: 'Michael Roberts',
-      position: 'Patient',
-      feedback:
-        '"Dr. Castaño’s holistic approach and deep understanding of internal medicine have significantly improved my health. His dedication and care are truly exceptional."',
-      image: 'assets/images/persona.png',
-    },
-    {
-      name: 'Sarah Johnson',
-      position: 'Patient',
-      feedback:
-        '"I was struggling with a chronic condition, and Dr. Castaño’s expertise in internal medicine has been life-changing. He listens attentively and provides clear guidance."',
-      image: 'assets/images/persona.png',
-    },
-    {
-      name: 'Thomas Brown',
-      position: 'Caregiver',
-      feedback:
-        '"Dr. Castaño’s ability to manage complex cases is remarkable. He not only treated my father’s condition but also educated us on how to maintain his health at home."',
-      image: 'assets/images/persona.png',
-    },
-    {
-      name: 'Emily Davis',
-      position: 'Patient',
-      feedback:
-        '"As an expat, finding a doctor who speaks fluent English and understands my medical history was a challenge. Dr. Castaño exceeded all my expectations!"',
-      image: 'assets/images/persona.png',
-    },
-  ];
-
+  testimonials: any[] = [];
   activeIndex = 0;
   interval: any;
 
+  constructor(private translationService: TranslationService) {}
+
   ngOnInit(): void {
+    this.translationService.currentTranslations.subscribe((translations) => {
+      if (translations?.testimonials && Array.isArray(translations.testimonials)) {
+        this.testimonials = translations.testimonials;
+      } else {
+        console.warn('No testimonials found in translations.');
+        this.testimonials = []; // Fallback si no hay datos de testimonios
+      }
+    });
     this.startAutoSlide();
   }
 

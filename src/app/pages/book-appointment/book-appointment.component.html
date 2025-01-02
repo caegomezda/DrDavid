@@ -1,46 +1,45 @@
 <div class="header-banner">
   <div class="container">
     <div class="contact-info">
-      <p class="cta-title">Schedule an Appointment</p>
-      <p><a href="#">Ciudad del Río, Medellín</a></p>
-      <p><a href="#">Make an Appointment</a></p>
-      <p class="phone-number"><a href="tel:+57 316 532 1717">+57 316 532 1717</a></p>
+      <p class="cta-title">{{ translations?.bookAppointment.scheduleAppointment }}</p>
+      <p><a href="#">{{ translations?.bookAppointment.location }}</a></p>
+      <p><a href="#">{{ translations?.bookAppointment.makeAppointment }}</a></p>
+      <p class="phone-number">
+        <a href="tel:+57 316 532 1717">{{ translations?.bookAppointment.phoneNumber }}</a>
+      </p>
     </div>
     <div class="logo">
-      <h1 class="doctor-name">David Castaño, M.D.</h1>
-      <p class="specialty">Internal Medicine</p>
+      <h1 class="doctor-name">{{ translations?.bookAppointment.doctorName }}</h1>
+      <p class="specialty">{{ translations?.bookAppointment.specialty }}</p>
     </div>
     <div class="secondary-contact">
-      <p><a href="#">Ciudad del Río, Medellín</a></p>
-      <p><a href="#">Edificio Tales</a></p>
+      <p><a href="#">{{ translations?.bookAppointment.location }}</a></p>
+      <p><a href="#">{{ translations?.bookAppointment.building }}</a></p>
     </div>
   </div>
 </div>
 
 <div class="main-content">
   <div class="container-title">
-    <h2>Specialized Medicine for Adults and Seniors</h2>
-    
+    <h2>{{ translations?.bookAppointment.specializedMedicine }}</h2>
     <a href="https://www.instagram.com/dr.davidcastano" target="_blank">
-      <button class="center-button">View My Biography and Philosophy</button>
+      <button class="center-button">{{ translations?.bookAppointment.viewBiography }}</button>
     </a>
   </div>
   <div class="container">
     <!-- Column 1: Intro Section -->
     <div class="column intro">
       <div class="image">
-        <h2 class="intro quote">"I love inspiring trust in my patients"</h2>
-        <p class="intro signature">~ Dr. Castaño</p>
+        <h2 class="intro quote">{{ translations?.bookAppointment.inspiringTrust }}</h2>
+        <p class="intro signature">{{ translations?.bookAppointment.signature }}</p>
 
-        <img src="assets/images/img3.jpg" alt="Dr. David Castaño">
+        <img src="assets/images/img3.jpg" alt="{{ translations?.bookAppointment.imageAlt }}">
       </div>
     </div>
     <!-- Column 2: Calendar Section -->
     <div class="column">
-      <!-- <div class="calendar-placeholder"> -->
-        <!-- Placeholder for a simple calendar -->
-        <!-- <app-calendar></app-calendar> -->
-      <!-- </div> -->
+      <!-- Placeholder for a simple calendar -->
+      <!-- <app-calendar></app-calendar> -->
     </div>
   </div>
 </div>
