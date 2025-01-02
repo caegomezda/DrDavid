@@ -3,56 +3,90 @@
   line-height: 1.5;
 }
 
-.services-grid {
+.services-accordion {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Two columns */
-  gap: 20px; /* Espaciado entre columnas */
-}
+  grid-template-columns: repeat(1, 1fr); /* Una columna para acordeón */
+  gap: 20px;
 
-.service-item {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  background: #f9f9f9; /* Fondo suave */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 1;
+  .accordion-item {
+    background: #f9f9f9; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 
-  &:hover {
-    transform: scale(1.05); /* Efecto de hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-    z-index: 2;
+    &:hover {
+      transform: scale(1.02); /* Efecto de hover ligero */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+      z-index: 2;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      cursor: pointer;
+      background-color: #e3f2fd; /* Azul claro */
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      h2 {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        i {
+          color: #1a73e8; /* Azul profesional */
+          font-size: 1.8rem;
+        }
+      }
+
+      .accordion-toggle {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #333;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .open {
+          display: inline-block;
+          transform: rotate(90deg);
+          transition: transform 0.3s ease;
+        }
+
+        .closed {
+          display: inline-block;
+          transform: rotate(0deg);
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      background-color: white;
+      padding: 0 20px;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+
+      &.open {
+        max-height: 500px; /* Altura máxima */
+        padding: 20px;
+      }
+
+      p {
+        font-size: 1.2rem; /* Tamaño del texto */
+        margin: 0;
+        color: #555; /* Tono suave */
+        text-align: justify; /* Texto justificado */
+        line-height: 1.8; /* Separación entre líneas */
+      }
+    }
   }
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  i {
-    color: black; /* Azul profesional */
-    font-size: 1.8rem; /* Tamaño ajustado para íconos */
-    margin-right: 5px;
-  }
-}
-
-p {
-  font-size: 1.2rem; /* Tamaño ligeramente más grande */
-  margin-bottom: 15px;
-  color: #555; /* Ajuste a un tono más suave */
-  text-align: justify; /* Justifica el texto */
-  max-width: 700px; /* Reduce el ancho del texto */
-  line-height: 1.8; /* Mejor separación entre líneas */
-}
-
-.custom-icon {
-  width: 29.05px;
-  height: 29.6px;
-  margin-bottom: 10px;
 }

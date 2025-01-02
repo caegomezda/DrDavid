@@ -6,9 +6,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
 
 body {
-  font-family: 'Oswald', sans-serif; /* Apply Oswald font to the entire page */
+  font-family: 'Oswald', Arial, sans-serif !important;
+  // font-family: 'Open Sans', sans-serif !important;
+  // font-family: 'Merriweather', serif !important;
+  // font-family: 'Nunito', sans-serif !important;
+  // font-family: 'Lato', sans-serif !important;
+  // font-family: 'Poppins', sans-serif !important;
+  // font-family: 'Roboto', sans-serif !important;
+
   margin: 0;
   padding: 0;
   line-height: 1.6;
   color: #333; /* Default text color */
 }
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif !important;
+  // font-family: 'Open Sans', sans-serif !important;
+  // font-family: 'Merriweather', serif !important;
+  // font-family: 'Nunito', sans-serif !important;
+  // font-family: 'Lato', sans-serif !important;
+  // font-family: 'Poppins', sans-serif !important;
+  // font-family: 'Roboto', sans-serif !important;
+}
+
