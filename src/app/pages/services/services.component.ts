@@ -36,14 +36,14 @@ export class ServicesComponent implements OnInit {
   }
 
   defaultServices = [
-    { id: 'hypertension', backgroundColor: '#9df2c7', icon: 'fas fa-heartbeat' },
-    { id: 'copd', backgroundColor: '#ffb3b0', image: 'assets/images/silueta-de-pulmones.png' },
-    { id: 'diabetes', backgroundColor: '#ffe066', image: 'assets/images/diabetes-test.png' },
-    { id: 'ckd', backgroundColor: '#81e5f7', image: 'assets/images/kidney.png' },
-    { id: 'migraine', backgroundColor: '#ffcc99', icon: 'fas fa-head-side-virus' },
-    { id: 'preventive-checkups', backgroundColor: '#b3e5cc', icon: 'fas fa-stethoscope' },
-    { id: 'gastrointestinal-disorders', backgroundColor: '#99e5a1', image: 'assets/images/colon.png' },
-    { id: 'cardiovascular-risk', backgroundColor: '#ff6666', icon: 'fas fa-heart' },
-    { id: 'travelers-fever', backgroundColor: '#fff8a6', icon: 'fas fa-route' }
+    { id: 'hypertension', backgroundColor: '#b9dcef', icon: 'fas fa-heartbeat' },
+    { id: 'copd', backgroundColor: '#ffffff', image: 'assets/images/silueta-de-pulmones.png' },
+    { id: 'diabetes', backgroundColor: '#b9dcef', image: 'assets/images/diabetes-test.png' },
+    { id: 'ckd', backgroundColor: '#ffffff', image: 'assets/images/kidney.png' },
+    { id: 'migraine', backgroundColor: '#b9dcef', icon: 'fas fa-head-side-virus' },
+    { id: 'preventive-checkups', backgroundColor: '#ffffff', icon: 'fas fa-stethoscope' },
+    { id: 'gastrointestinal-disorders', backgroundColor: '#b9dcef', image: 'assets/images/colon.png' },
+    { id: 'cardiovascular-risk', backgroundColor: '#ffffff', icon: 'fas fa-heart' },
+    { id: 'travelers-fever', backgroundColor: '#b9dcef', icon: 'fas fa-route' },
   ];
 }
