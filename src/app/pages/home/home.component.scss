@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 30px; /* Increased spacing */
-    padding: 30px;
+    padding: 60px;
 
     .image-container img {
       border-radius: 10px;
@@ -32,17 +32,17 @@
   .services {
     text-align: center;
     margin: 80px;
-
+  
     h2 {
       font-size: 2rem;
       color: #0e3858;
     }
-
+  
     .services-panel {
       display: grid;
       grid-template-columns: repeat(4, 1fr); /* Two columns */
-      gap: 15px; /* Reduced gap for better layout */
-
+      gap: 15px; // Espaciado uniforme
+  
       .service-item {
         display: flex;
         flex-direction: column;
@@ -53,24 +53,49 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: center;
         transition: transform 0.3s ease;
-
+        background-color: #f9f9f9;
+  
         i {
-          font-size: 1.8rem; /* Slightly larger icons */
+          font-size: 1.8rem; // Íconos más visibles
           margin-bottom: 10px;
         }
-
+  
         h3 {
           font-size: 1.2rem;
           margin-bottom: 10px;
         }
-
+  
         p {
           font-size: 1rem;
           margin-bottom: 10px;
         }
-
+  
         &:hover {
           transform: scale(1.05);
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .services-panel {
+        grid-template-columns: repeat(2, 1fr); // Dos columnas en pantallas pequeñas
+        gap: 10px; // Reduce el espacio entre los elementos
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .services-panel {
+        grid-template-columns: repeat(1, 1fr); // Una columna en pantallas muy pequeñas
+      }
+  
+      .service-item {
+        padding: 15px; // Reduce el padding en pantallas pequeñas
+        h3 {
+          font-size: 1rem; // Ajusta el tamaño del título
+        }
+  
+        p {
+          font-size: 0.9rem; // Ajusta el tamaño del texto
         }
       }
     }
@@ -92,21 +117,42 @@
   h2 {
     font-size: 2.2rem;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem; /* Reduce el tamaño del título en pantallas medianas */
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.5rem; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
   }
 
   .video-container {
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
+    justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center;
-    flex-direction: row;
+    margin: 0 auto;
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
 
-    iframe {
+    iframe, video {
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%; /* Asegura que se ajuste al ancho del contenedor */
+      max-width: 960px; /* Limita el ancho máximo */
+      // height: auto; /* Ajusta automáticamente la altura según el ancho */
+
+      @media (max-width: 768px) {
+        max-width: 720px; /* Reduce el ancho en pantallas medianas */
+      }
+
+      @media (max-width: 480px) {
+        max-width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+        height: 200px; /* Establece una altura específica para pantallas pequeñas */
+      }
     }
   }
 }
+
 
 /* Two-Column Section */
 .two-column-section {
@@ -208,9 +254,14 @@
   background-color: #f4f4f4; /* Fondo opcional para resaltar */
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
+  .video-section{
+    margin: 0px 50px !important;
+  }
+  .text-container{
+    margin: 0px 0px;
+  }
   .content-section {
     flex-direction: column;
     gap: 15px;

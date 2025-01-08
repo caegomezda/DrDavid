@@ -1,7 +1,7 @@
 <header
   class="site-header"
   role="banner"
-  style="background-image: url('assets/images/header-image.jpg'); background-size: cover; background-position: center; position: sticky;"
+  style="background-image: url('assets/images/header-image.jpg'); background-size: cover; background-position: center; position: sticky !important;"
 >
   <!-- Dark Overlay -->
   <div
@@ -20,10 +20,11 @@
     <div class="header-top">
       <!-- Header Links (Flexbox for alignment) -->
       <div class="header-links" [class.active]="menuActive">
-        <a routerLink="/services">{{ translations?.links?.services }}</a>
-        <a routerLink="/experience">{{ translations?.links?.experience }}</a>
-        <a routerLink="/book-appointment">{{ translations?.links?.bookAppointment }}</a>
-        <a routerLink="/posts">{{ translations?.links?.posts }}</a>
+        <a routerLink="/" *ngIf="menuActive"  (click)="closeMenu()">{{ translations?.siteTitle || 'Dr. David Castaño' }}</a>
+        <a routerLink="/services" (click)="closeMenu()">{{ translations?.links?.services }}</a>
+        <a routerLink="/experience" (click)="closeMenu()">{{ translations?.links?.experience }}</a>
+        <a routerLink="/book-appointment" (click)="closeMenu()">{{ translations?.links?.bookAppointment }}</a>
+        <a routerLink="/posts" (click)="closeMenu()">{{ translations?.links?.posts }}</a>
       </div>
     </div>
 

@@ -1,3 +1,9 @@
+:host {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .appointment-form-container {
   max-width: 800px;
   margin: 30px 0px;
@@ -24,7 +30,7 @@
 
     input,
     select {
-      width: 90%;
+      // width: 90%;
       padding: 12px;
       font-size: 1rem;
       border: 1px solid #ccc;
@@ -42,7 +48,7 @@
 
   .submit-button {
     display: block;
-    width: 90%;
+    width: 100%;
     padding: 12px;
     font-size: 1.2rem;
     color: #fff;
@@ -69,5 +75,12 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  }
+}
+
+
+@media (max-width: 768px) {
+  :host{
+    width: 60%;
   }
 }
