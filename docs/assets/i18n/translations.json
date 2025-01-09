@@ -1,0 +1,517 @@
+{
+  "en": {
+    "footer": {
+      "contactTitle": "Contact",
+      "contactName": "Dr. David Castaño",
+      "contactEmail": "Email",
+      "contactPhone": "Phone",
+      "quickLinksTitle": "Quick Links",
+      "quickLinks": {
+        "home": "Home",
+        "services": "Services",
+        "experience": "Experience",
+        "bookAppointment": "Book an Appointment"
+      },
+      "followUsTitle": "Follow Us",
+      "footerBottom": "Dr. David Castaño. All Rights Reserved."
+    },
+    "header": {
+      "siteTitle": "Dr. David Castaño",
+      "links": {
+        "services": "Services",
+        "experience": "Experience",
+        "bookAppointment": "Book an Appointment",
+        "posts": "Posts"
+      }
+    },
+    "testimonials": [
+  {
+    "name": "Michael Roberts",
+    "position": "Patient",
+    "feedback": "Dr. Castaño’s holistic approach and deep understanding of internal medicine have significantly improved my health. His dedication and care are truly exceptional.",
+    "image": "assets/images/persona.png"
+  },
+  {
+    "name": "Sarah Johnson",
+    "position": "Patient",
+    "feedback": "I was struggling with a chronic condition, and Dr. Castaño’s expertise in internal medicine has been life-changing. He listens attentively and provides clear guidance.",
+    "image": "assets/images/persona.png"
+  },
+  {
+    "name": "Thomas Brown",
+    "position": "Caregiver",
+    "feedback": "Dr. Castaño’s ability to manage complex cases is remarkable. He not only treated my father’s condition but also educated us on how to maintain his health at home.",
+    "image": "assets/images/persona.png"
+  },
+  {
+    "name": "Emily Davis",
+    "position": "Patient",
+    "feedback": "As an expat, finding a doctor who speaks fluent English and understands my medical history was a challenge. Dr. Castaño exceeded all my expectations!",
+    "image": "assets/images/persona.png"
+  }
+    ],
+    "posts": {
+      "title": "Posts",
+      "subscribe": "Subscribe via RSS",
+      "items": [
+        {
+          "title": "Schedule a house-call or an office appointment",
+          "date": "Jan 1, 2024",
+          "description": "Book a house-call or visit Dr. Castaño’s office for personalized internal medicine care.",
+          "link": "#"
+        },
+        {
+          "title": "Summary of Dr. Castaño's Experience",
+          "date": "Jan 1, 2024",
+          "description": "Explore Dr. Castaño's extensive background in internal medicine and patient care.",
+          "link": "#"
+        },
+        {
+          "title": "Are you an English speaker and need an internal medicine specialist?",
+          "date": "Jan 1, 2024",
+          "description": "Learn how Dr. Castaño provides exceptional bilingual medical services in Medellín.",
+          "link": "#"
+        },
+        {
+          "title": "Our Internal Medicine Services",
+          "date": "Jan 1, 2024",
+          "description": "Discover the range of internal medicine services tailored to your needs.",
+          "link": "#"
+        },
+        {
+          "title": "Home Consultation and Office Appointment Services",
+          "date": "Jan 1, 2024",
+          "description": "Learn more about our house-call and office appointment options.",
+          "link": "#"
+        },
+        {
+          "title": "Comprehensive Internal Medicine Expertise",
+          "date": "Jan 1, 2024",
+          "description": "Discover how Dr. Castaño’s experience makes him a trusted choice in Medellín.",
+          "link": "#"
+        },
+        {
+          "title": "Bilingual Medical Support in Medellín",
+          "date": "Jan 1, 2024",
+          "description": "Providing expert care for English speakers in Medellín.",
+          "link": "#"
+        }
+      ]
+    },
+    "notFound": {
+      "title": "404",
+      "message": "Oops! The page you're looking for doesn't exist.",
+      "homeButton": "Go Back to Home"
+    },
+    "home": {
+      "title": "We excel at internal medicine for English speakers",
+      "intro": "Schedule an appointment with Dr. Castaño and see for yourself.",
+      "description": "I have 13 years of experience, including 8 years in internal medicine. I have worked in hospital settings, emergency departments, and ambulatory care. My holistic approach ensures personalized, compassionate care tailored to each patient's needs. I am committed to long-term health and wellness through patient education and comprehensive care.",
+      "servicesTitle": "Our Services",
+      "learnMoreTitle": "Learn more about our approach",
+      "contactUsTitle": "Contact Us",
+      "contactUsEmail": "Email:",
+      "contactUsDescription": "Request Description:",
+      "contactUsButton": "Submit",
+      "whyChooseUsTitle": "Why Choose Us?",
+      "whyChooseUsDescription": "Dr. Castaño offers a unique combination of experience, compassion, and personalized care. With over 13 years of experience, he is dedicated to providing a holistic approach to your well-being.",
+      "whyChooseUsPoints": [
+        "Expertise in internal medicine.",
+        "Bilingual care (English and Spanish).",
+        "Personalized medical evaluations."
+      ],
+      "readMore": "Read more"
+    },
+    "services": [
+      {
+        "id": "hypertension",
+        "title": "Hypertension",
+        "icon": "fas fa-heartbeat",
+        "shortDescription": "Hypertension control and management.",
+        "detailedDescription": "Hypertension, or high blood pressure, is a common condition that can lead to severe complications if left untreated. We offer comprehensive hypertension management, including lifestyle counseling, medication management, and regular monitoring to help control blood pressure and reduce the risk of cardiovascular diseases."
+      },
+      {
+        "id": "copd",
+        "title": "COPD",
+        "shortDescription": "Treatment and management of COPD.",
+        "detailedDescription": "Chronic Obstructive Pulmonary Disease (COPD) is a progressive lung disease that makes it hard to breathe. Our treatment plans for COPD include smoking cessation support, bronchodilator therapies, pulmonary rehabilitation, and oxygen therapy to improve quality of life and reduce exacerbations."
+      },
+      {
+        "id": "diabetes",
+        "title": "Diabetes Mellitus",
+        "shortDescription": "Type 2 Diabetes treatment and management.",
+        "detailedDescription": "Type 2 Diabetes Mellitus is a chronic condition that affects the way your body metabolizes carbohydrates. We provide individualized treatment plans that include dietary counseling, exercise recommendations, medication management, and regular monitoring to help control blood sugar levels and prevent complications."
+      },
+      {
+        "id": "ckd",
+        "title": "CKD (Chronic Kidney Disease)",
+        "shortDescription": "Control and follow-up for Chronic Kidney Disease.",
+        "detailedDescription": "Chronic Kidney Disease (CKD) involves the gradual loss of kidney function. Our CKD management includes monitoring kidney function, controlling blood pressure and blood sugar, managing anemia and bone disease, and preparing for dialysis if necessary. Our goal is to slow the progression of kidney damage and maintain quality of life."
+      },
+      {
+        "id": "migraine",
+        "title": "Migraine",
+        "shortDescription": "Migraine treatment and management.",
+        "detailedDescription": "Migraines are severe headaches that can significantly impact your quality of life. Our migraine management includes identifying triggers, providing pain relief strategies, and offering long-term prevention techniques to reduce the frequency and severity of migraines."
+      },
+      {
+        "id": "preventive-checkups",
+        "title": "Preventive Checkups",
+        "shortDescription": "Regular medical checkups and preventive care.",
+        "detailedDescription": "Preventive medical checkups are essential for maintaining good health and early detection of potential health issues. We offer comprehensive checkups tailored to your age, gender, and specific health risks, helping you stay proactive about your health."
+      },
+      {
+        "id": "gastrointestinal-disorders",
+        "title": "Gastrointestinal Disorders",
+        "shortDescription": "Gastrointestinal and hepatic conditions and disorders.",
+        "detailedDescription": "Gastrointestinal and hepatic conditions can range from common issues like acid reflux to complex diseases such as liver cirrhosis. Our services include diagnostic evaluations, treatment plans, dietary counseling, and follow-up care to manage and improve gastrointestinal health."
+      },
+      {
+        "id": "cardiovascular-risk",
+        "title": "Cardiovascular Risk Assessment",
+        "shortDescription": "Cardiovascular risk evaluation and management.",
+        "detailedDescription": "Assessing cardiovascular risk involves evaluating factors such as cholesterol levels, blood pressure, lifestyle habits, and family history. We provide detailed cardiovascular risk assessments and personalized plans to mitigate these risks, including lifestyle interventions and medication management as needed."
+      },
+      {
+        "id": "travelers-fever",
+        "title": "Traveler's Fever",
+        "shortDescription": "Evaluation and follow-up for traveler’s fever.",
+        "detailedDescription": "Travelers fever, often associated with tropical infectious diseases, requires prompt evaluation and treatment. We provide comprehensive evaluation and management for fever in travelers, including diagnostic testing, treatment of identified infections, and preventive advice for future travel."
+      }
+    ],
+    "experience": {
+      "typicalPatient": {
+        "title": "Typical Patient Profile",
+        "description": "People between 18-75 years old, foreigners or Colombians.",
+        "demographics": "Retired patients.",
+        "languages": "English and Spanish."
+      },
+      "medicalConditions": {
+        "title": "Medical Conditions",
+        "common": "Hypertension, Diabetes, Migraine, Obesity, Headaches, Irritable Bowel Syndrome, Gastroesophageal Reflux Disease, Thyroid diseases, Sexually transmitted infections, Preventive medical checkups.",
+        "specialized": "Preoperative medical evaluations for chronic disease control, Medical certificates for migration procedures."
+      },
+      "geographicAnalysis": {
+        "title": "Geographic Analysis",
+        "countries": "United States, Canada, United Kingdom, Spain.",
+        "reasons": "Tourism among younger individuals and residence among older individuals (retirees)."
+      },
+      "patientExpectations": {
+        "title": "Patient Expectations",
+        "expectations": "To have a doctor who speaks good English and can manage their chronic diseases.",
+        "communication": "WhatsApp.",
+        "information": "Opinions of other patients."
+      },
+      "patientExperience": {
+        "feedback": "They praise the commitment and accuracy of the diagnoses.",
+        "highlights": "The kindness and clarity in explaining their health conditions."
+      },
+      "competition": {
+        "differentiation": "Few internists speak fluent English, and I have more than 2 years of experience treating international patients."
+      },
+      "barriers": {
+        "faced": "Language, patients who do not speak any Spanish may face difficulties in undergoing medical exams.",
+        "solutions": "I have considered forming strategic alliances with laboratories and clinics experienced in attending foreign patients or training my secretary to assist them in scheduling exam appointments."
+      }
+    },
+    "appointmentScheduler": {
+      "bookAppointment": "Book an Appointment",
+      "fullName": "Full Name",
+      "documentType": "Document Type",
+      "select": "Select...",
+      "idCard": "ID Card",
+      "passport": "Passport",
+      "driversLicense": "Driver's License",
+      "documentNumber": "Document Number",
+      "phoneNumber": "Phone Number",
+      "preferredContactMethod": "Preferred Contact Method",
+      "Email": "Email",
+      "Phone": "Phone",
+      "WhatsApp": "WhatsApp",
+      "policyType": "Policy Type",
+      "Sura Salud Para Todos": "Sura Health for All",
+      "Sura Global": "Sura Global",
+      "Sura Clásico": "Sura Classic",
+      "Particular": "Private",
+      "submit": "Submit",
+      "appointmentSubmitted": "Your appointment request has been submitted!"
+    },
+    "floatingButtons": {
+      "spanish": "Spanish",
+      "english": "English",
+      "whatsapp": "Contact via WhatsApp",
+      "instagram": "Follow on Instagram"
+    },
+    "bookAppointment": {
+      "scheduleAppointment": "Schedule an Appointment",
+      "location": "Ciudad del Río, Medellín",
+      "makeAppointment": "Make an Appointment",
+      "phoneNumber": "+57 316 532 1717",
+      "doctorName": "David Castaño, M.D.",
+      "specialty": "Internal Medicine",
+      "building": "Edificio Tales",
+      "specializedMedicine": "Specialized Medicine for Adults and Seniors",
+      "viewBiography": "View My Biography and Philosophy",
+      "inspiringTrust": "\"I love inspiring trust in my patients\"",
+      "signature": "~ Dr. Castaño",
+      "imageAlt": "Dr. David Castaño"
+    }
+  },
+  "es": {
+    "footer": {
+      "contactTitle": "Contacto",
+      "contactName": "Dr. David Castaño",
+      "contactEmail": "Correo Electrónico",
+      "contactPhone": "Teléfono",
+      "quickLinksTitle": "Enlaces Rápidos",
+      "quickLinks": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "experience": "Experiencia",
+        "bookAppointment": "Reservar una Cita"
+      },
+      "followUsTitle": "Síguenos",
+      "footerBottom": "Dr. David Castaño. Todos los Derechos Reservados."
+    },
+    "header": {
+    "siteTitle": "Dr. David Castaño", 
+      "links": {
+        "services": "Servicios",
+        "experience": "Experiencia",
+        "bookAppointment": "Reservar una Cita",
+        "posts": "Publicaciones"
+      }
+    },
+    "testimonials": [
+  {
+    "name": "Michael Roberts",
+    "position": "Paciente",
+    "feedback": "El enfoque holístico del Dr. Castaño y su profundo conocimiento de la medicina interna han mejorado significativamente mi salud. Su dedicación y cuidado son realmente excepcionales.",
+    "image": "assets/images/persona.png"
+  },
+  {
+    "name": "Sarah Johnson",
+    "position": "Paciente",
+    "feedback": "Estaba luchando con una condición crónica, y la experiencia del Dr. Castaño en medicina interna ha cambiado mi vida. Escucha atentamente y proporciona orientación clara.",
+    "image": "assets/images/persona.png"
+  },
+  {
+    "name": "Thomas Brown",
+    "position": "Cuidador",
+    "feedback": "La capacidad del Dr. Castaño para manejar casos complejos es notable. No solo trató la condición de mi padre, sino que también nos educó sobre cómo mantener su salud en casa.",
+    "image": "assets/images/persona.png"
+  },
+  {
+    "name": "Emily Davis",
+    "position": "Paciente",
+    "feedback": "Como expatriada, encontrar un médico que hable inglés fluido y entienda mi historial médico fue un desafío. ¡El Dr. Castaño superó todas mis expectativas!",
+    "image": "assets/images/persona.png"
+  }
+    ],
+    "posts": {
+      "title": "Publicaciones",
+      "subscribe": "Suscribirse vía RSS",
+      "items": [
+        {
+          "title": "Agenda una visita a domicilio o una cita en el consultorio",
+          "date": "1 Ene, 2024",
+          "description": "Reserva una visita a domicilio o consulta en el consultorio del Dr. Castaño para recibir atención personalizada en medicina interna.",
+          "link": "#"
+        },
+        {
+          "title": "Resumen de la experiencia del Dr. Castaño",
+          "date": "1 Ene, 2024",
+          "description": "Descubre la amplia experiencia del Dr. Castaño en medicina interna y atención al paciente.",
+          "link": "#"
+        },
+        {
+          "title": "¿Hablas inglés y necesitas un especialista en medicina interna?",
+          "date": "1 Ene, 2024",
+          "description": "Descubre cómo el Dr. Castaño ofrece servicios médicos bilingües excepcionales en Medellín.",
+          "link": "#"
+        },
+        {
+          "title": "Nuestros servicios de medicina interna",
+          "date": "1 Ene, 2024",
+          "description": "Descubre la variedad de servicios de medicina interna adaptados a tus necesidades.",
+          "link": "#"
+        },
+        {
+          "title": "Servicios de consulta en casa y en consultorio",
+          "date": "1 Ene, 2024",
+          "description": "Conoce más sobre nuestras opciones de visitas a domicilio y consultas en el consultorio.",
+          "link": "#"
+        },
+        {
+          "title": "Experiencia integral en medicina interna",
+          "date": "1 Ene, 2024",
+          "description": "Descubre cómo la experiencia del Dr. Castaño lo convierte en una opción confiable en Medellín.",
+          "link": "#"
+        },
+        {
+          "title": "Soporte médico bilingüe en Medellín",
+          "date": "1 Ene, 2024",
+          "description": "Proporcionando atención experta para hablantes de inglés en Medellín.",
+          "link": "#"
+        }
+      ]
+    },
+    "notFound": {
+      "title": "404",
+      "message": "¡Ups! La página que buscas no existe.",
+      "homeButton": "Volver al Inicio"
+    },
+    "home": {
+      "title": "Destacamos en medicina interna para hablantes de inglés",
+      "intro": "Agenda una cita con el Dr. Castaño y compruébalo tú mismo.",
+      "description": "Tengo 13 años de experiencia, incluidos 8 años en medicina interna. He trabajado en hospitales, departamentos de emergencias y atención ambulatoria. Mi enfoque holístico asegura una atención personalizada y compasiva adaptada a las necesidades de cada paciente. Estoy comprometido con la salud y el bienestar a largo plazo a través de la educación al paciente y una atención integral.",
+      "servicesTitle": "Nuestros Servicios",
+      "learnMoreTitle": "Conoce más sobre nuestro enfoque",
+      "contactUsTitle": "Contáctanos",
+      "contactUsEmail": "Correo Electrónico:",
+      "contactUsDescription": "Descripción de la Solicitud:",
+      "contactUsButton": "Enviar",
+      "whyChooseUsTitle": "¿Por qué elegirnos?",
+      "whyChooseUsDescription": "El Dr. Castaño ofrece una combinación única de experiencia, compasión y atención personalizada. Con más de 13 años de experiencia, está dedicado a brindar un enfoque holístico a tu bienestar.",
+      "whyChooseUsPoints": [
+        "Experiencia en medicina interna.",
+        "Atención bilingüe (inglés y español).",
+        "Evaluaciones médicas personalizadas."
+      ],
+      "readMore": "Leer más"
+    },
+    "services": [
+      {
+        "id": "hypertension",
+        "title": "Hipertensión",
+        "shortDescription": "Control y manejo de la hipertensión.",
+        "detailedDescription": "La hipertensión, o presión arterial alta, es una condición común que puede llevar a complicaciones graves si no se trata. Ofrecemos un manejo integral de la hipertensión, incluyendo asesoramiento sobre el estilo de vida, manejo de medicamentos y monitoreo regular para ayudar a controlar la presión arterial y reducir el riesgo de enfermedades cardiovasculares."
+      },
+      {
+        "id": "copd",
+        "title": "EPOC",
+        "shortDescription": "Tratamiento y manejo del EPOC.",
+        "detailedDescription": "La Enfermedad Pulmonar Obstructiva Crónica (EPOC) es una enfermedad pulmonar progresiva que dificulta la respiración. Nuestros planes de tratamiento para EPOC incluyen apoyo para dejar de fumar, terapias broncodilatadoras, rehabilitación pulmonar y oxigenoterapia para mejorar la calidad de vida y reducir las exacerbaciones."
+      },
+      {
+        "id": "diabetes",
+        "title": "Diabetes Mellitus",
+        "shortDescription": "Tratamiento y manejo de la Diabetes Tipo 2.",
+        "detailedDescription": "La Diabetes Mellitus Tipo 2 es una condición crónica que afecta la forma en que el cuerpo metaboliza los carbohidratos. Proporcionamos planes de tratamiento individualizados que incluyen asesoramiento dietético, recomendaciones de ejercicio, manejo de medicamentos y monitoreo regular para ayudar a controlar los niveles de azúcar en sangre y prevenir complicaciones."
+      },
+      {
+        "id": "ckd",
+        "title": "Enfermedad Renal Crónica (ERC)",
+        "shortDescription": "Control y seguimiento de la Enfermedad Renal Crónica.",
+        "detailedDescription": "La Enfermedad Renal Crónica (ERC) implica la pérdida gradual de la función renal. Nuestro manejo de ERC incluye el monitoreo de la función renal, el control de la presión arterial y el azúcar en sangre, el manejo de la anemia y las enfermedades óseas, y la preparación para la diálisis si es necesario. Nuestro objetivo es frenar la progresión del daño renal y mantener la calidad de vida."
+      },
+      {
+        "id": "migraine",
+        "title": "Migraña",
+        "shortDescription": "Tratamiento y manejo de la migraña.",
+        "detailedDescription": "Las migrañas son dolores de cabeza severos que pueden afectar significativamente tu calidad de vida. Nuestro manejo de migrañas incluye la identificación de desencadenantes, estrategias para aliviar el dolor y técnicas de prevención a largo plazo para reducir la frecuencia y la gravedad de las migrañas."
+      },
+      {
+        "id": "preventive-checkups",
+        "title": "Exámenes Preventivos",
+        "shortDescription": "Revisiones médicas regulares y cuidado preventivo.",
+        "detailedDescription": "Los exámenes médicos preventivos son esenciales para mantener una buena salud y detectar posibles problemas de salud de manera temprana. Ofrecemos revisiones integrales adaptadas a tu edad, género y riesgos específicos para ayudarte a ser proactivo con tu salud."
+      },
+      {
+        "id": "gastrointestinal-disorders",
+        "title": "Trastornos Gastrointestinales",
+        "shortDescription": "Condiciones y trastornos gastrointestinales y hepáticos.",
+        "detailedDescription": "Las condiciones gastrointestinales y hepáticas pueden variar desde problemas comunes como el reflujo ácido hasta enfermedades complejas como la cirrosis hepática. Nuestros servicios incluyen evaluaciones diagnósticas, planes de tratamiento, asesoramiento dietético y seguimiento para gestionar y mejorar la salud gastrointestinal."
+      },
+      {
+        "id": "cardiovascular-risk",
+        "title": "Evaluación de Riesgo Cardiovascular",
+        "shortDescription": "Evaluación y manejo del riesgo cardiovascular.",
+        "detailedDescription": "La evaluación del riesgo cardiovascular implica analizar factores como los niveles de colesterol, la presión arterial, los hábitos de vida y los antecedentes familiares. Proporcionamos evaluaciones detalladas del riesgo cardiovascular y planes personalizados para mitigar estos riesgos, incluyendo intervenciones en el estilo de vida y manejo de medicamentos según sea necesario."
+      },
+      {
+        "id": "travelers-fever",
+        "title": "Fiebre del Viajero",
+        "shortDescription": "Evaluación y seguimiento de la fiebre del viajero.",
+        "detailedDescription": "La fiebre del viajero, a menudo asociada con enfermedades tropicales infecciosas, requiere una evaluación y tratamiento oportunos. Ofrecemos una evaluación y manejo integral para la fiebre del viajero, incluyendo pruebas diagnósticas, tratamiento de infecciones identificadas y consejos preventivos para futuros viajes."
+      }
+    ],
+    "experience": {
+      "typicalPatient": {
+        "title": "Perfil Típico del Paciente",
+        "description": "Personas entre 18 y 75 años, extranjeros o colombianos.",
+        "demographics": "Pacientes jubilados.",
+        "languages": "Inglés y Español."
+      },
+      "medicalConditions": {
+        "title": "Condiciones Médicas",
+        "common": "Hipertensión, Diabetes, Migraña, Obesidad, Dolores de cabeza, Síndrome de Intestino Irritable, Enfermedad por Reflujo Gastroesofágico, Enfermedades de la tiroides, Infecciones de transmisión sexual, Chequeos médicos preventivos.",
+        "specialized": "Evaluaciones médicas preoperatorias para el control de enfermedades crónicas, Certificados médicos para trámites migratorios."
+      },
+      "geographicAnalysis": {
+        "title": "Análisis Geográfico",
+        "countries": "Estados Unidos, Canadá, Reino Unido, España.",
+        "reasons": "Turismo en personas jóvenes y residencia en personas mayores (jubilados)."
+      },
+      "patientExpectations": {
+        "title": "Expectativas de los Pacientes",
+        "expectations": "Tener un médico que hable buen inglés y pueda manejar sus enfermedades crónicas.",
+        "communication": "WhatsApp.",
+        "information": "Opiniones de otros pacientes."
+      },
+      "patientExperience": {
+        "feedback": "Elogian el compromiso y la precisión en los diagnósticos.",
+        "highlights": "La amabilidad y claridad al explicar sus condiciones de salud."
+      },
+      "competition": {
+        "differentiation": "Pocos internistas hablan inglés fluido, y tengo más de 2 años de experiencia tratando pacientes internacionales."
+      },
+      "barriers": {
+        "faced": "El idioma; los pacientes que no hablan español pueden tener dificultades para realizarse exámenes médicos.",
+        "solutions": "He considerado formar alianzas estratégicas con laboratorios y clínicas con experiencia en atender pacientes extranjeros o capacitar a mi secretaria para ayudarlos a programar exámenes."
+      }
+    },
+    "appointmentScheduler": {
+      "bookAppointment": "Reservar una Cita",
+      "fullName": "Nombre Completo",
+      "documentType": "Tipo de Documento",
+      "select": "Seleccionar...",
+      "idCard": "Cédula",
+      "passport": "Pasaporte",
+      "driversLicense": "Licencia de Conducir",
+      "documentNumber": "Número de Documento",
+      "phoneNumber": "Número de Teléfono",
+      "preferredContactMethod": "Método de Contacto Preferido",
+      "Email": "Correo Electrónico",
+      "Phone": "Teléfono",
+      "WhatsApp": "WhatsApp",
+      "policyType": "Tipo de Póliza",
+      "Sura Salud Para Todos": "Sura Salud Para Todos",
+      "Sura Global": "Sura Global",
+      "Sura Clásico": "Sura Clásico",
+      "Particular": "Particular",
+      "submit": "Enviar",
+      "appointmentSubmitted": "¡Su solicitud de cita ha sido enviada!"
+    },
+    "floatingButtons": {
+      "spanish": "Español",
+      "english": "Inglés",
+      "whatsapp": "Contactar por WhatsApp",
+      "instagram": "Seguir en Instagram"
+    },
+    "bookAppointment": {
+      "scheduleAppointment": "Programar una Cita",
+      "location": "Ciudad del Río, Medellín",
+      "makeAppointment": "Hacer una Cita",
+      "phoneNumber": "+57 316 532 1717",
+      "doctorName": "David Castaño, M.D.",
+      "specialty": "Medicina Interna",
+      "building": "Edificio Tales",
+      "specializedMedicine": "Medicina Especializada para Adultos y Mayores",
+      "viewBiography": "Ver Mi Biografía y Filosofía",
+      "inspiringTrust": "\"Me encanta inspirar confianza en mis pacientes\"",
+      "signature": "~ Dr. Castaño",
+      "imageAlt": "Dr. David Castaño"
+    }
+  }
+}
