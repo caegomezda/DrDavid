@@ -1,0 +1,101 @@
+.floating-language-buttons {
+  position: fixed;
+  top: 25%; /* Ajusta la posición vertical */
+  right: 20px; /* Asegura que no quede muy cerca del borde */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1100; /* Asegura que esté por encima de otros elementos */
+}
+
+.flag-icon {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ajuste para evitar conflictos con otros elementos */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-whatsapp-button i {
+  color: white;
+  font-size: 2rem;
+}
+
+.floating-instagram-button {
+  position: fixed;
+  bottom: 90px; /* Ajusta la posición para que no se solape con WhatsApp */
+  left: 20px;
+  background-color: #e1306c;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-instagram-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-instagram-button i {
+  color: white;
+  font-size: 2rem;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .floating-language-buttons {
+    top: 15%; /* Ajusta la posición para pantallas más pequeñas */
+    right: 10px;
+  }
+
+  .floating-whatsapp-button {
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .floating-instagram-button {
+    bottom: 80px; /* Ajusta la distancia para que no se solapen */
+    left: 15px;
+  }
+
+  .flag-icon {
+    width: 35px; /* Reduce el tamaño en pantallas pequeñas */
+  }
+
+  .floating-whatsapp-button i,
+  .floating-instagram-button i {
+    font-size: 1.8rem; /* Ajusta el tamaño de los íconos */
+  }
+}

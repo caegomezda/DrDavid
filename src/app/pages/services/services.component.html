@@ -1,0 +1,20 @@
+<div class="background-image">
+  <div class="services-accordion">
+    <div
+      *ngFor="let service of services; let i = index"
+      class="accordion-item"
+      [style.backgroundColor]="service.backgroundColor"
+    >
+      <div class="accordion-header" (click)="toggleAccordion(i)">
+        <h2 [id]="service.id">{{ service.title }}</h2>
+        <button class="accordion-toggle">
+          <span [class.open]="activeIndex === i">&#9660;</span>
+          <!-- <span [class.closed]="activeIndex !== i">&#9658;</span> -->
+        </button>
+      </div>
+      <div class="accordion-content" [class.open]="activeIndex === i">
+        <p>{{ service.detailedDescription }}</p>
+      </div>
+    </div>
+  </div>
+</div>

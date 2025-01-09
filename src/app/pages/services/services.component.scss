@@ -1,0 +1,103 @@
+.background-image {
+  padding: 20px 150px;
+  line-height: 1.5;
+}
+
+.services-accordion {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Una columna para acordeón */
+  gap: 20px;
+
+  .accordion-item {
+    background: #f9f9f9; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.02); /* Efecto de hover ligero */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+      z-index: 2;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      cursor: pointer;
+      background-color: #e3f2fd; /* Azul claro */
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      h2 {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        i {
+          color: #1a73e8; /* Azul profesional */
+          font-size: 1.8rem;
+        }
+      }
+
+      .accordion-toggle {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #333;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .open {
+          display: inline-block;
+          transform: rotate(90deg);
+          transition: transform 0.3s ease;
+        }
+
+        .closed {
+          display: inline-block;
+          transform: rotate(0deg);
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      background-color: white;
+      padding: 0 20px;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+
+      &.open {
+        max-height: 500px; /* Altura máxima */
+        padding: 20px;
+      }
+
+      p {
+        font-size: 1.2rem; /* Tamaño del texto */
+        margin: 0;
+        color: #555; /* Tono suave */
+        text-align: justify; /* Texto justificado */
+        line-height: 1.8; /* Separación entre líneas */
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    padding: 50px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+
+}

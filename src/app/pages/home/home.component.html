@@ -1,0 +1,95 @@
+<div class="home">
+  <!-- Title Section -->
+  <div class="content-section">
+    <!-- Image Section -->
+    <div  class="image-container">
+      <img 
+        src="../../../assets/images/david.jpg" 
+        alt="{{ translations?.home.title}}" 
+        width="298" 
+        height="510">
+    </div>
+    <!-- Text Section -->
+    <div *ngIf="translations" class="text-container">
+      <h1>{{ translations?.home.title }}</h1>
+      <p>{{ translations?.home.intro }}</p>
+      <p>{{ translations?.home.description }}</p>
+    </div>
+  </div>
+  
+  <section class="services">
+    <h2>{{ translations?.home.servicesTitle }}</h2>
+    <div class="services-panel">
+      <div *ngFor="let service of services | slice:0:8" class="service-item" [style.background-color]="service.backgroundColor">
+        <!-- Mostrar ícono de fuente si existe -->
+        <i *ngIf="service.icon" class="{{ service.icon }}"></i>
+        <!-- Mostrar imagen personalizada si existe -->
+        <img 
+          *ngIf="service.image" 
+          [src]="service.image" 
+          [alt]="service.title + ' icon'" 
+          class="custom-icon" />
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.shortDescription }}</p>
+        <a [href]="'/services#' + service.id">{{ translations?.home.readMore }}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section>
+    <div class="video-section">
+      <h2>{{ translations?.home.learnMoreTitle }}</h2>
+      <div class="video-container">
+        <!-- Video Local -->
+        <video 
+          width="1092" 
+          height="615" 
+          controls 
+          muted 
+          loop>
+          <source src="assets/images/IMG_9375.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Two-Column Section -->
+  <section>
+    <div class="two-column-section">
+      <div class="contact-form">
+        <h2>{{ translations?.home.contactUsTitle }}</h2>
+        <form>
+          <label for="email">{{ translations?.home.contactUsEmail }}</label>
+          <input type="email" id="email" placeholder="{{ translations?.home.contactUsPlaceholder }}" required>
+
+          <label for="description">{{ translations?.home.contactUsDescription }}</label>
+          <textarea 
+            id="description" 
+            placeholder="{{ translations?.home.requestDescriptionPlaceholder }}" 
+            rows="5" 
+            required>
+          </textarea>
+
+          <button type="submit">{{ translations?.home.contactUsButton }}</button>
+        </form>
+      </div>
+      <div class="info-column">
+        <h2>{{ translations?.home.whyChooseUsTitle }}</h2>
+        <p>{{ translations?.home.whyChooseUsDescription }}</p>
+        <ul>
+          <li *ngFor="let point of translations?.home.whyChooseUsPoints">
+            <i class="fas fa-check-circle"></i> {{ point }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <div class="center-container">
+    <app-appointment-scheduler></app-appointment-scheduler>
+  </div>
+  <app-testimonials></app-testimonials>
+</div>

@@ -1,0 +1,37 @@
+<section class="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="pq-testimonial-box-slider">
+          <!-- Single Testimonial -->
+          <div class="pq-testimonial-box" *ngIf="testimonials[activeIndex]">
+            <div class="pq-testimonial-media">
+              <div class="pq-testimonial-img">
+                <img
+                  [src]="testimonials[activeIndex].image"
+                  [alt]="testimonials[activeIndex].name"
+                />
+              </div>
+              <div class="pq-testimonial-meta">
+                <h5 class="pq-testmonial-title">
+                  {{ testimonials[activeIndex].name }}
+                </h5>
+                <span>{{ testimonials[activeIndex].position }}</span>
+              </div>
+            </div>
+            <div class="pq-testimonial-info">
+              <p class="pq-testimonial-description">
+                {{ testimonials[activeIndex].feedback }}
+              </p>
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="testimonial-navigation">
+            <button (click)="prevSlide()">&#9664;</button>
+            <button (click)="nextSlide()">&#9654;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

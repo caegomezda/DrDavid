@@ -1,0 +1,40 @@
+<div class="background-image">
+  <div class="section">
+    <h2>{{ translations?.experience.typicalPatient.title }}</h2>
+    <ul>
+      <li><strong>Description:</strong> {{ translations?.experience.typicalPatient.description }}</li>
+      <li><strong>Demographics:</strong> {{ translations?.experience.typicalPatient.demographics }}</li>
+      <li><strong>Languages:</strong> {{ translations?.experience.typicalPatient.languages }}</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>{{ translations?.experience.medicalConditions.title }}</h2>
+    <ul>
+      <li><strong>Common Conditions:</strong> {{ translations?.experience.medicalConditions.common }}</li>
+      <li><strong>Specialized Services:</strong> {{ translations?.experience.medicalConditions.specialized }}</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>{{ translations?.experience.geographicAnalysis.title }}</h2>
+    <ul>
+      <li><strong>Countries of Origin:</strong> {{ translations?.experience.geographicAnalysis.countries }}</li>
+      <li><strong>Reasons for Medellín:</strong> {{ translations?.experience.geographicAnalysis.reasons }}</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>{{ translations?.experience.patientExpectations.title }}</h2>
+    <ul>
+      <li><strong>Expectations:</strong> {{ translations?.experience.patientExpectations.expectations }}</li>
+      <li><strong>Preferred Communication:</strong> {{ translations?.experience.patientExpectations.communication }}</li>
+      <li><strong>Valued Information:</strong> {{ translations?.experience.patientExpectations.information }}</li>
+    </ul>
+  </div>
+  <app-testimonials></app-testimonials>
+
+  <div class="center-container">
+    <app-appointment-scheduler></app-appointment-scheduler>
+  </div>
+</div>

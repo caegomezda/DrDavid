@@ -1,0 +1,16 @@
+<div class="posts-container">
+  <h2>{{ translations?.posts?.title }}</h2>
+  <div class="post-list">
+    <div *ngFor="let post of posts" class="post-item">
+      <h3>{{ post.title }}</h3>
+      <p class="date">{{ post.date }}</p>
+      <p>{{ post.description }}</p>
+      <a [href]="post.link" target="_blank" class="read-more">
+        {{ translations?.posts?.readMore || 'Read More' }}
+      </a>
+    </div>
+  </div>
+  <div class="subscribe">
+    <a href="#" class="subscribe-link">{{ translations?.posts?.subscribe }}</a>
+  </div>
+</div>

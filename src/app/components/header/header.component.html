@@ -1,0 +1,44 @@
+<header
+  class="site-header"
+  role="banner"
+  style="background-image: url('assets/images/header-image.jpg'); background-size: cover; background-position: center; position: sticky !important;"
+>
+  <!-- Dark Overlay -->
+  <div
+    style="content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.6); z-index: 1;"
+  ></div>
+  <div class="header-wrapper">
+    <!-- Site Title -->
+    <div>
+      <a class="site-title" rel="author" routerLink="/">{{ translations?.siteTitle || 'Dr. David Castaño' }}</a>
+    </div>
+
+    <!-- Menu Toggle (Hamburger Icon) -->
+    <div class="menu-toggle" (click)="toggleMenu()">☰</div>
+
+    <!-- Header Content -->
+    <div class="header-top">
+      <!-- Header Links (Flexbox for alignment) -->
+      <div class="header-links" [class.active]="menuActive">
+        <a routerLink="/" *ngIf="menuActive"  (click)="closeMenu()">{{ translations?.siteTitle || 'Dr. David Castaño' }}</a>
+        <a routerLink="/services" (click)="closeMenu()">{{ translations?.links?.services }}</a>
+        <a routerLink="/experience" (click)="closeMenu()">{{ translations?.links?.experience }}</a>
+        <a routerLink="/book-appointment" (click)="closeMenu()">{{ translations?.links?.bookAppointment }}</a>
+        <a routerLink="/posts" (click)="closeMenu()">{{ translations?.links?.posts }}</a>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://wa.me/573165321717" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/dr.davidcastano" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:dcastanosorio87@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</header>

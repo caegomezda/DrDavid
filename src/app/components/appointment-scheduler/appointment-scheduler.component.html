@@ -1,0 +1,84 @@
+<div class="appointment-form-container">
+  <h2>{{ translations?.bookAppointment }}</h2>
+  <form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="name">{{ translations?.fullName }}</label>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]="appointmentForm.name"
+        name="name"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="documentType">{{ translations?.documentType }}</label>
+      <select
+        id="documentType"
+        [(ngModel)]="appointmentForm.documentType"
+        name="documentType"
+        required
+      >
+        <option value="">{{ translations?.select }}</option>
+        <option value="ID Card">{{ translations?.idCard }}</option>
+        <option value="Passport">{{ translations?.passport }}</option>
+        <option value="Driver's License">{{ translations?.driversLicense }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="documentNumber">{{ translations?.documentNumber }}</label>
+      <input
+        type="text"
+        id="documentNumber"
+        [(ngModel)]="appointmentForm.documentNumber"
+        name="documentNumber"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">{{ translations?.phoneNumber }}</label>
+      <input
+        type="text"
+        id="phone"
+        [(ngModel)]="appointmentForm.phone"
+        name="phone"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="contactMethod">{{ translations?.preferredContactMethod }}</label>
+      <select
+        id="contactMethod"
+        [(ngModel)]="appointmentForm.contactMethod"
+        name="contactMethod"
+        required
+      >
+        <option value="">{{ translations?.select }}</option>
+        <option *ngFor="let method of contactMethods" [value]="method">
+          {{ translations?.[method] }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="policy">{{ translations?.policyType }}</label>
+      <select
+        id="policy"
+        [(ngModel)]="appointmentForm.policy"
+        name="policy"
+        required
+      >
+        <option value="">{{ translations?.select }}</option>
+        <option *ngFor="let policy of policies" [value]="policy">
+          {{ translations?.[policy] }}
+        </option>
+      </select>
+    </div>
+
+    <button type="submit" class="submit-button">{{ translations?.submit }}</button>
+  </form>
+</div>
