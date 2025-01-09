@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.translationService.currentTranslations.subscribe({
-      next: (translations) => {
+      next: (translations :any) => {
         this.translations = translations;
 
         if (translations?.services && Array.isArray(translations.services)) {

@@ -2,15 +2,15 @@
   <!-- Title Section -->
   <div class="content-section">
     <!-- Image Section -->
-    <div class="image-container">
+    <div  class="image-container">
       <img 
         src="../../../assets/images/david.jpg" 
-        alt="{{ translations?.home.title }}" 
+        alt="{{ translations?.home.title}}" 
         width="298" 
         height="510">
     </div>
     <!-- Text Section -->
-    <div class="text-container">
+    <div *ngIf="translations" class="text-container">
       <h1>{{ translations?.home.title }}</h1>
       <p>{{ translations?.home.intro }}</p>
       <p>{{ translations?.home.description }}</p>
@@ -91,5 +91,6 @@
   <div class="center-container">
     <app-appointment-scheduler></app-appointment-scheduler>
   </div>
+  <app-secret-form></app-secret-form>
   <app-testimonials></app-testimonials>
 </div>
