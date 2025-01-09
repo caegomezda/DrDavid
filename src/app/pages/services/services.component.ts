@@ -14,7 +14,7 @@ export class ServicesComponent implements OnInit {
   constructor(private translationService: TranslationService) {}
 
   ngOnInit(): void {
-    this.translationService.currentTranslations.subscribe((translations) => {
+    this.translationService.currentTranslations.subscribe((translations :any) => {
       this.translations = translations;
 
       if (translations?.services && Array.isArray(translations.services)) {

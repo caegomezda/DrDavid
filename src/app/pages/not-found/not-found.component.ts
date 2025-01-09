@@ -12,7 +12,7 @@ export class NotFoundComponent implements OnInit {
   constructor(private translationService: TranslationService) {}
 
   ngOnInit(): void {
-    this.translationService.currentTranslations.subscribe((translations) => {
+    this.translationService.currentTranslations.subscribe((translations :any) => {
       this.translations = translations;
     });
   }

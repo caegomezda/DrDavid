@@ -14,7 +14,7 @@ export class TestimonialsComponent implements OnInit {
   constructor(private translationService: TranslationService) {}
 
   ngOnInit(): void {
-    this.translationService.currentTranslations.subscribe((translations) => {
+    this.translationService.currentTranslations.subscribe((translations :any) => {
       if (translations?.testimonials && Array.isArray(translations.testimonials)) {
         this.testimonials = translations.testimonials;
       } else {

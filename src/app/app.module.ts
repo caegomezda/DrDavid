@@ -19,7 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppointmentSchedulerComponent } from './components/appointment-scheduler/appointment-scheduler.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { TranslationService } from './services/translation.service'; // Ajusta el path si es necesario
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule, // Aquí se incluye FormsModule
     HttpClientModule
     ],
-  providers: [],
+  providers: [TranslationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
