@@ -8,20 +8,20 @@
             <div class="pq-testimonial-media">
               <div class="pq-testimonial-img">
                 <img
-                  [src]="testimonials[activeIndex].image"
-                  [alt]="testimonials[activeIndex].name"
+                  [src]="testimonials[activeIndex]?.image"
+                  [alt]="testimonials[activeIndex]?.name"
                 />
               </div>
               <div class="pq-testimonial-meta">
                 <h5 class="pq-testmonial-title">
-                  {{ testimonials[activeIndex].name }}
+                  {{ testimonials[activeIndex]?.name }}
                 </h5>
-                <span>{{ testimonials[activeIndex].position }}</span>
+                <span>{{ testimonials[activeIndex]?.position }}</span>
               </div>
             </div>
             <div class="pq-testimonial-info">
               <p class="pq-testimonial-description">
-                {{ testimonials[activeIndex].feedback }}
+                {{ testimonials[activeIndex]?.feedback }}
               </p>
             </div>
           </div>

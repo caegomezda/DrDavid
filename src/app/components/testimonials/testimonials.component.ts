@@ -18,7 +18,7 @@ export class TestimonialsComponent implements OnInit {
       if (translations?.testimonials && Array.isArray(translations.testimonials)) {
         this.testimonials = translations.testimonials;
       } else {
-        console.warn('No testimonials found in translations.');
+        // console.warn('No testimonials found in translations.');
         this.testimonials = []; // Fallback si no hay datos de testimonios
       }
     });

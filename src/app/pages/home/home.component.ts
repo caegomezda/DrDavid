@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
             ...this.defaultServices[index]
           }));
         } else {
-          console.warn('No se encontraron servicios en las traducciones.');
+          // console.warn('No se encontraron servicios en las traducciones.');
           this.services = this.defaultServices;
         }
       },
