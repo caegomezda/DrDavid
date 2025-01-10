@@ -20,7 +20,7 @@ export class PostsComponent implements OnInit {
       if (translations?.posts?.items && Array.isArray(translations.posts.items)) {
         this.posts = translations.posts.items;
       } else {
-        console.warn('No posts found in translations.');
+        // console.warn('No posts found in translations.');
         this.posts = []; // Fallback a posts vacíos
       }
     });
