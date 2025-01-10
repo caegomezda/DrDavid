@@ -234,7 +234,8 @@
       "Sura Clásico": "Sura Classic",
       "Particular": "Private",
       "submit": "Submit",
-      "appointmentSubmitted": "Your appointment request has been submitted!"
+      "formSubmitted": "Your appointment request has been submitted!",
+      "formError": "An error occurred while submitting the form. Please try again."
     },
     "floatingButtons": {
       "spanish": "Spanish",
@@ -491,7 +492,8 @@
       "Sura Clásico": "Sura Clásico",
       "Particular": "Particular",
       "submit": "Enviar",
-      "appointmentSubmitted": "¡Su solicitud de cita ha sido enviada!"
+      "formSubmitted": "¡Su solicitud de cita ha sido enviada!",
+      "formError": "Ocurrió un error al enviar el formulario. Por favor, inténtelo de nuevo."
     },
     "floatingButtons": {
       "spanish": "Español",

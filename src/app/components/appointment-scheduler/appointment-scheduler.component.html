@@ -1,3 +1,7 @@
+<div class="loading-overlay" *ngIf="loading">
+  <div class="spinner"></div>
+</div>
+
 <div class="appointment-form-container">
   <h2>{{ translations?.bookAppointment }}</h2>
   <form (ngSubmit)="submitForm()">
@@ -81,4 +85,14 @@
 
     <button type="submit" class="submit-button">{{ translations?.submit }}</button>
   </form>
+
+  <!-- Contenedor del mensaje de éxito -->
+  <div *ngIf="successMessage" class="success-message">
+    {{ formSubmitted }}
+  </div>
+
+  <!-- Mensaje de error -->
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
 </div>
